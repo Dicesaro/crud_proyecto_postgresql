@@ -1,16 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 
-<% content_for :title, "Articulos" %>
+<% content_for :title, "Artículos" %>
 
-<h1>Articulos</h1>
+<h1>Artículos</h1>
+
+<%= link_to "Nuevo artículo", new_articulo_path, class: "link-nuevo-articulo" %>
 
 <div id="articulos">
   <% @articulos.each do |articulo| %>
-    <%= render articulo %>
-    <p>
-      <%= link_to "Show this articulo", articulo %>
-    </p>
+    <div class="articulo-item">
+      <%= render articulo %>
+      <p>
+        <%= link_to "Mostrar este artículo", articulo%>
+      </p>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New articulo", new_articulo_path %>

@@ -1,0 +1,146 @@
+.notice {
+   color: #13d37a;
+   font-family: sans-serif;
+   font-weight: 700;
+}
+
+#categoria {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+   background-color: #f9f9f9;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.categoria-item {
+   background-color: #fff;
+   font-family: sans-serif;
+   border: 1px solid #ddd;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   flex: 1 1 300px;
+}
+
+.categoria-item p {
+   margin-top: 10px;
+   font-size: 16px;
+}
+
+.categorias-header {
+   color: #2c3e50;
+   font-family: sans-serif;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.link-new-categoria {
+   display: block;
+   font-family: sans-serif;
+   text-align: center;
+   margin-top: 20px;
+   font-size: 18px;
+   color: green;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+.link-new-categoria:hover {
+   color: darkgreen;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   padding: 20px;
+   border-radius: 10px;
+   min-height: 50vh;
+   min-width: 400px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+   width: 100%;
+}
+
+form label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+form input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: none;
+   border-radius: 5px;
+}
+
+form .btn-primary {
+   background-color: #3498db;
+   color: #fff;
+}
+
+form .btn-primary:hover {
+   background-color: #2980b9;
+}
+
+.show-container {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   min-height: 30vh;
+   gap: 20px;
+}
+
+.container a {
+   text-decoration: none;
+   color: #3498db;
+   font-weight: bold;
+   margin: 0 10px;
+   transition: color 0.3s;
+}
+
+.container .btn-delete {
+   display: flex;
+   align-items: center;
+   background-color: #bf516b;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: bold;
+   font-size: 16px;
+
+   &:hover {
+      background-color: #fa033d;
+   }
+}
+
+.edit-categoria-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-color: #f0f0f0;
+   padding: 20px;
+   border-radius: 10px;
+   min-height: 50vh;
+   min-width: 400px;
+   margin: 0 auto;
+}
+
+.edit-categoria-container a {
+   text-decoration: none;
+   color: #3498db;
+   font-weight: bold;
+   margin: 0 10px;
+   transition: color 0.3s;
+}

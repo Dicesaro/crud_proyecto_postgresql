@@ -4,13 +4,16 @@
 
 <h1>Usuarios</h1>
 
+<%= link_to " + Agregar nuevo usuario", new_usuario_path, class: "link-new-usuario" %>
+
 <div id="usuarios">
   <% @usuarios.each do |usuario| %>
-    <%= render usuario %>
-    <p>
-      <%= link_to "Show this usuario", usuario %>
-    </p>
+    <div class="usuario-item">
+      <%= render usuario %>
+      <p>
+        <%= link_to "Mostrar usuario", usuario %>
+      </p>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New usuario", new_usuario_path %>

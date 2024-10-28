@@ -3,14 +3,17 @@
 <% content_for :title, "Categoria" %>
 
 <h1>Categorias</h1>
+<%= link_to "Nueva Categoría", new_categorium_path , class: "link-new-categoria"%>
+
 
 <div id="categoria">
-  <% @categoria.each do |categorium| %>
-    <%= render categorium %>
-    <p>
-      <%= link_to "Show this categorium", categorium %>
-    </p>
+  <% @categoria.each do |categoria| %>
+    <div class="categoria-item">
+      <%= render categoria %>
+      <p>
+        <%= link_to "Mostrar categoria", categoria %>
+      </p>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New categorium", new_categorium_path %>

@@ -1,11 +1,13 @@
 <% content_for :title, "New articulo" %>
 
-<h1>New articulo</h1>
 
-<%= render "form", articulo: @articulo %>
+<div class="articulo-form">
+<h1>Nuevo Articulo</h1>
+  <%= render "form", articulo: @articulo %>
+</div>
 
 <br>
 
 <div>
-  <%= link_to "Back to articulos", articulos_path %>
+  <%= link_to "Regresar a Articulos 👈", articulos_path %>
 </div>

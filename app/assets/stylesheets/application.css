@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import "usuarios.css";
+@import "articulos.css";
+@import "comentarios.css";
+@import "categorias.css";

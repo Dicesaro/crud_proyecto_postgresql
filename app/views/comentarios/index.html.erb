@@ -1,16 +1,19 @@
-<p style="color: green"><%= notice %></p>
+<p class="notice"><%= notice %></p>
 
 <% content_for :title, "Comentarios" %>
 
 <h1>Comentarios</h1>
 
+<%= link_to "Nuevo comentario", new_comentario_path, class: "link-nuevo-comentario" %>
+
 <div id="comentarios">
   <% @comentarios.each do |comentario| %>
+   <div class="comentario-item">
     <%= render comentario %>
     <p>
-      <%= link_to "Show this comentario", comentario %>
+      <%= link_to "Mostrar este comentario", comentario %>
     </p>
+   </div>
   <% end %>
 </div>
 
-<%= link_to "New comentario", new_comentario_path %>
